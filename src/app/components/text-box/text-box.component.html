@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="textBox">{{label}}</label>
+  <input type="{{type}}" class="form-control" id="{{id}}" placeholder="{{placeholder}}" [value]="value"
+    (input)="onChange($event.target.value)" (blur)="onTouched()">
+  <small id="{{helpMessageId}}" class="form-text text-muted">{{helpMessage}}</small>
+</div>
